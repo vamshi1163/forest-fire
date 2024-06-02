@@ -6,7 +6,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
 
-app=Flask(__name__)
+application=Flask(__name__)
+app=application 
 
 scaler=pickle.load(open("scalar.pkl","rb"))
 model=pickle.load(open("ridge.pkl",'rb'))
